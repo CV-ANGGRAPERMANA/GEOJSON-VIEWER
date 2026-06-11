@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>GEOJSON VIEWER CV.AGP</title>
+  <link rel="icon" href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgAYyAHWv7Tr7OklvPReHDaMFfwhthNNDAliSthGJovxPCqLyufNreQpP8g2rjDasl7cAm5I2s4P8LjSVSsQzLlgR5W-_LBm5EFfeSa_rWjV2X4_T348Sk__0luoBqxT77Vzx0YyA_F3g-TsbmDSbzKYNJI0OSh2aBgfBlRJDYJA-3r5nfaG2AINPkBkSA1/s512/map_854878.png" />
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      height: 100%;
+      background-color: #eee;
+      overflow: hidden; /* Mencegah scroll ganda */
+    }
+
+    .iframe-container {
+      width: 100%;
+      height: 100dvh; /* Menggunakan dvh agar pas di mobile browser */
+      overflow: hidden;
+    }
+
+    iframe {
+      display: block;
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="iframe-container">
+    <iframe
+      id="app"
+      src="https://script.google.com/macros/s/AKfycbxKXLLeAzwb4mZpv3-0Q1kNSbF81spuSWCiLdYoliKRd9v5-f1x-GltP-kUYF2bxUe_/exec"
+      scrolling="yes"
+      allowfullscreen="true"
+      webkitallowfullscreen="true"
+      mozallowfullscreen="true"
+      allow="fullscreen; camera; microphone; display-capture; geolocation;">
+    </iframe>
+  </div>
+</body>
+</html>
